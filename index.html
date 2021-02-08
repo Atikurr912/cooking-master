@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cooking Master </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" style="padding-bottom: 47px;">
+        <div class="nav-section">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <p class="logoo">Cooking Master</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> <i class="fa fa-bars" aria-hidden="true"></i> </span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end navbar-list" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link logoo" href="#"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link logoo" href="#"> About </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link logoo" href="#"> Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link logoo" href="#"> Blog </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="contain">
+        <input id="inputValue" type="text" placeholder="Search Your Foods..." />
+        <button id="search" class="btn-search" type="button">SEARCH</button>
+    </div>
+
+    <section class="container py-4 hover-style">
+        <div id="foods" class="row g-3"></div>
+
+    </section>
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="allfood" class="modal-body"></div>
+
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+</html>
